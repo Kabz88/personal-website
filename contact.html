@@ -2,26 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - Kabesa Mwansa</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="css/adminlte.css">
+  <link rel="stylesheet" href="css/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="css/style-kabesa.css" />
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="contact.html">Contact</a>
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <a class="navbar-brand" href="index.html">Kabesa Mwansa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <main>
-    <h1>Contact Me</h1>
-    <p>Email: <a href="mailto:kabesa@example.com">kabesa@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/Kabz88" target="_blank">Kabz88</a></p>
-  </main>
+  <div class="container mt-5">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, use the form below or email me directly.</p>
 
-  <footer>
-    <p>© 2025 Kabesa Mwansa</p>
+    <div class="row">
+      <div class="col-md-8">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" class="form-control" placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+        </form>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="mt-4">Email:</h5>
+        <p><a href="mailto:Kabzmwansa@hotmail.com">Kabzmwansa@hotmail.com</a></p>
+        <h5>Location:</h5>
+        <p>Lusaka, Zambia</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer text-center py-3 bg-light mt-5">
+    <strong>&copy; 2025 Kabesa Mwansa</strong>
   </footer>
 
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/adminlte.js"></script>
 </body>
 </html>
