@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffffff, #a8d5ba);
+  color: #333;
+}
+
+header, main, footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #007acc;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-section label {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
